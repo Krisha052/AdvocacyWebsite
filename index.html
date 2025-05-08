@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KRathod Advocacy Project</title>
+        <link href="reset.css" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    <body class="light-mode">
+        <!-- Header -->
+        <header>
+            <div>
+                <img src="logo.png" alt="Logo" style="height: 50px;" />
+                <span style="font-weight: bold;">Mindfulness</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#survey">Survey</a></li>
+                    <li><a href="#discussions">Discussions</a></li>
+                    <li><a href="#petition-section">Petition</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Dark Mode Toggle -->
+        <button id="modeToggle" onclick="toggleMode()">Toggle Dark Mode</button>
+
+        <!-- Articles Section -->
+        <section id="articles" class="scroll-section">
+            <h2>Articles</h2>
+            <div class="article-item">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4527955/" target="_blank">
+                    <img src="Articleimage.png" alt="Article Image 1" />
+                </a>
+                <p>
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4527955/" target="_blank">Read Article 1: The Importance of Mental Health Awareness</a>
+                </p>
+            </div>
+            <div class="article-item">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4527955/" target="_blank">
+                    <img src="Articleimage2.png" alt="Article Image 2" />
+                </a>
+                <p>
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4527955/" target="_blank">Read Article 2: Strategies for Better Mental Well-being</a>
+                </p>
+            </div>
+        </section>
+        
+        
+
+        <!-- Survey Section -->
+        <section id="survey" class="scroll-section">
+            <h2>Take a Quiz:</h2>
+            <h3>Have you worried a lot in the last month?</h3>
+            <div class="survey-question">
+                <button>Frequently</button>
+                <button>Sometimes</button>
+                <button>No</button>
+            </div>
+        
+            <h3>Have you been getting exhausted or worn out during the day or evening, even when you have not been working very hard?</h3>
+            <div class="survey-question">
+                <button>Frequently</button>
+                <button>Sometimes</button>
+                <button>No</button>
+            </div>
+        
+            <h3>What has your concentration been like recently?</h3>
+            <div class="survey-question">
+                <button>Good concentration</button>
+                <button>Occasionally can't concentrate</button>
+                <button>No concentration</button>
+            </div>
+        </section>
+        
+
+        <!-- Discussions Section -->
+        <section id="discussions" class="scroll-section">
+            <h2>Forum Discussions</h2>
+            <ul>
+                <li><a href="#">Forum Discussion Link 1</a></li>
+                <li><a href="#">Forum Discussion Link 2</a></li>
+                <li><a href="#">Forum Discussion Link 3</a></li>
+            </ul>
+        </section>
+
+        <!-- Petition Section -->
+        <section id="petition-section" class="scroll-section">
+            <div id="cta-section">
+                <h2>Contribute to the initiative</h2>
+                <p>Join us in advocating for mental health awareness by signing the petition.</p>
+            </div>
+            <div id="signature-section">
+                <form id="petition-form" onsubmit="handleFormSubmit(event)">
+                    <label for="signature" style="font-weight: bold;">Name:</label>
+                    <input type="text" id="signature" placeholder="Enter your full name" />
+                    <label for="email" style="font-weight: bold;">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email address" />
+                    <button type="submit">Sign Now</button>
+                </form>
+                <div id="signatures-list">
+                    <h3>Supporters</h3>
+                    <ul id="signatures"></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Thank You, <span id="user-name"></span>!</h3>
+                <p>For helping the cause.</p>
+                <img src="Mental-health.png" alt="Thank You Image" class="animated-image" />
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 KRathod Advocacy Project</p>
+        </footer>
+    </body>
+</html>
